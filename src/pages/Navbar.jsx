@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-// import JivoChatWidget from "./JivochatWidget";
 
 const Navbar = () => {
   return (
