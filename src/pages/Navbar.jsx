@@ -6,13 +6,13 @@ const Navbar = () => {
     <nav className="bg-white fixed w-full top-0 z-10 shadow-md">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between py-4">
         {/* Logo or Brand */}
-        {/* <Link to="/">
+        <Link to="/">
           <img
             src="https://cdn.freebiesupply.com/images/large/2x/hewlett-packard-logo-black-and-white.png"
             alt="Logo"
             className="h-10 w-10 object-contain"
           />
-        </Link> */}
+        </Link>
         {/* Navigation Items */}
         <div className="flex space-x-8 text-lg text-gray-700">
           <p className="hover:text-black transition duration-300">Explore</p>
@@ -59,14 +59,14 @@ const Navbar = () => {
           </Link>
         </li>
 
-        <li>
+        {/* <li>
           <Link
             to="/privacypolicy"
             className="hover:text-gray-300 cursor-pointer block py-2 sm:py-0"
           >
             Privacy Policy
           </Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );

@@ -5,7 +5,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  // useLocation,
+  useLocation,
 } from "react-router-dom";
 import PrinterSetup from "./pages/PrinterOffline";
 import PrinterSetupIssue from "./pages/PrinterSetupIssue";
@@ -13,29 +13,29 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Contact from "./pages/Contact";
 import DownloadPage from "./pages/download/DownloadPage";
 import ScannerSetup from "./pages/ScannerSetup";
-// import JivoChatWidget from "./pages/JivochatWidget";
+import JivoChatWidget from "./pages/JivochatWidget";
 
-// // Component to conditionally render JivoChatWidget
-// const RenderJivoChat = ({ children }) => {
-//   // Get the current location using useLocation hook
-//   const location = useLocation();
+// Component to conditionally render JivoChatWidget
+const RenderJivoChat = ({ children }) => {
+  // Get the current location using useLocation hook
+  const location = useLocation();
 
-//   // Define an array of paths where JivoChatWidget should be rendered
-//   const allowedPaths = ["/", "/printeroffline", "/printersetupissue"];
+  // Define an array of paths where JivoChatWidget should be rendered
+  const allowedPaths = ["/", "/printeroffline", "/printersetupissue"];
 
-//   // Check if the current pathname is one of the allowed paths
-//   const shouldRenderJivoChat = allowedPaths.includes(location.pathname);
+  // Check if the current pathname is one of the allowed paths
+  const shouldRenderJivoChat = allowedPaths.includes(location.pathname);
 
-//   // Render children along with JivoChatWidget if shouldRenderJivoChat is true
-//   return shouldRenderJivoChat ? (
-//     <>
-//       <JivoChatWidget />
-//       {children}
-//     </>
-//   ) : (
-//     children
-//   );
-// };
+  // Render children along with JivoChatWidget if shouldRenderJivoChat is true
+  return shouldRenderJivoChat ? (
+    <>
+      <JivoChatWidget />
+      {children}
+    </>
+  ) : (
+    children
+  );
+};
 
 const App = () => {
   return (
@@ -45,25 +45,25 @@ const App = () => {
         <Route
           path="/"
           element={
-            // <RenderJivoChat>
-            <Home />
-            // </RenderJivoChat>
+            <RenderJivoChat>
+              <Home />
+            </RenderJivoChat>
           }
         />
         <Route
           path="/printeroffline"
           element={
-            // <RenderJivoChat>
-            <PrinterSetup />
-            // </RenderJivoChat>
+            <RenderJivoChat>
+              <PrinterSetup />
+            </RenderJivoChat>
           }
         />
         <Route
           path="/printersetupissue"
           element={
-            // <RenderJivoChat>
-            <PrinterSetupIssue />
-            // </RenderJivoChat>
+            <RenderJivoChat>
+              <PrinterSetupIssue />
+            </RenderJivoChat>
           }
         />
         <Route path="/privacypolicy" element={<PrivacyPolicy />} />

@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react';
+import { useEffect } from "react";
 
 const JivoChatWidget = () => {
   useEffect(() => {
     // Create script element
-    const script = document.createElement('script');
-    script.src = '//code.jivosite.com/widget/QQqRQwAAQH';
+    const script = document.createElement("script");
+    script.src = "//code.jivosite.com/widget/MeLHBqBZzj";
 
     script.async = true;
 
