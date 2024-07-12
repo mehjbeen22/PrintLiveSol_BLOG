@@ -156,7 +156,7 @@ const PrinterOffline = () => {
             </ul>
             <Link
               to="/downloadDrivers"
-              className="bg-[#0278AB] text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300"
+              className="bg-[#0278AB] text-white px-4 py-2 rounded hover:black transition duration-300"
             >
               Get HP Smart
             </Link>

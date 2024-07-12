@@ -1,20 +1,20 @@
-import React, { useState } from 'react';
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import PrintIcon from '@mui/icons-material/Print';
-import MonitorIcon from '@mui/icons-material/Monitor';
-import DevicesIcon from '@mui/icons-material/Devices';
-import HeadsetMicIcon from '@mui/icons-material/HeadsetMic';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import PrintIcon from "@mui/icons-material/Print";
+import MonitorIcon from "@mui/icons-material/Monitor";
+import DevicesIcon from "@mui/icons-material/Devices";
+import HeadsetMicIcon from "@mui/icons-material/HeadsetMic";
+import { Link } from "react-router-dom";
 
 const ProductFinder = () => {
-  const [printerName, setPrinterName] = useState('');
+  const [printerName, setPrinterName] = useState("");
 
   const handleInputChange = (e) => {
     setPrinterName(e.target.value);
   };
 
-  const canRedirect = printerName.trim() !== '';
+  const canRedirect = printerName.trim() !== "";
 
   return (
     <div>

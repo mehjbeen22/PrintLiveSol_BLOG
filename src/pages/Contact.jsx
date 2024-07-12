@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import Disclaimer from './Disclaimer';
+import React, { useState } from "react";
+import Disclaimer from "./Disclaimer";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
 
   const [formError, setFormError] = useState(false);
@@ -26,9 +26,9 @@ const Contact = () => {
       setFormSubmitted(true);
       // Reset form fields after submission
       setFormData({
-        name: '',
-        email: '',
-        message: '',
+        name: "",
+        email: "",
+        message: "",
       });
       // Reset error state
       setFormError(false);

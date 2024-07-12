@@ -14,6 +14,9 @@ import Contact from "./pages/Contact";
 import DownloadPage from "./pages/download/DownloadPage";
 import ScannerSetup from "./pages/ScannerSetup";
 import JivoChatWidget from "./pages/JivochatWidget";
+import SignIn from "./pages/SigninPage";
+
+import SoftwareAndDrivers from "./pages/SoftwareAndDrivers";
 
 // Component to conditionally render JivoChatWidget
 const RenderJivoChat = ({ children }) => {
@@ -50,25 +53,9 @@ const App = () => {
             </RenderJivoChat>
           }
         />
-        <Route
-          path="/printeroffline"
-          element={
-            <RenderJivoChat>
-              <PrinterSetup />
-            </RenderJivoChat>
-          }
-        />
-        <Route
-          path="/printersetupissue"
-          element={
-            <RenderJivoChat>
-              <PrinterSetupIssue />
-            </RenderJivoChat>
-          }
-        />
-        <Route path="/privacypolicy" element={<PrivacyPolicy />} />
-        <Route path="/scannersetup" element={<ScannerSetup />} />
-        <Route path="/contact" element={<Contact />} />
+
+        <Route path="/account" element={<SignIn />} />
+        <Route path="/sofware&drivers" element={<SoftwareAndDrivers />} />
         <Route path="/downloadDrivers" element={<DownloadPage />} />
       </Routes>
       <Footer />

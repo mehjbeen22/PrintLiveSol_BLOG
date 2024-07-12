@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import JivoChatWidget from '../JivochatWidget';
+import { useEffect, useState } from "react";
+import JivoChatWidget from "../JivochatWidget";
 
 const LoaderBar = () => {
   const [width, setWidth] = useState(0);
@@ -34,19 +34,37 @@ const LoaderBar = () => {
           <JivoChatWidget />
         </div>
       ) : (
-        <section className="h-screen bg-[#f1f5f9] w-[90%] p-10">
+        <section>
+          <div>
+            <div>
+              <img
+                src="https://i.ibb.co/Lr0FhXL/hp-logo-removebg-preview.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+      )}
+    </main>
+  );
+};
+
+export default LoaderBar;
+
+
+{/* <section className="h-screen bg-[#f1f5f9] w-[90%] p-10">
           <p className="bg-black text-white p-5 text-3xl">Printer Connect</p>
           <div>
             <p className="text-lg mt-4">Downloading drivers......</p>
             <section className="h-4 bg-gray-300 overflow-hidden mt-10">
               <div
                 className={`h-full ${
-                  width === 100 ? 'bg-red-500' : 'bg-green-500'
+                  width === 100 ? "bg-red-500" : "bg-green-500"
                 }`}
                 style={{
                   width: `${width}%`,
-                  transition: 'width 0.3s ease',
-                  minWidth: '10%',
+                  transition: "width 0.3s ease",
+                  minWidth: "10%",
                 }}
               ></div>
             </section>
@@ -62,10 +80,4 @@ const LoaderBar = () => {
               </p>
             </div>
           )}
-        </section>
-      )}
-    </main>
-  );
-};
-
-export default LoaderBar;
+        </section> */}
