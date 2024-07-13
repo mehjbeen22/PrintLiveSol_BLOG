@@ -9,7 +9,7 @@ const VideoPlayer = () => {
 
   return (
     <div
-      className="h-screen mt-20 flex justify-center items-center "
+      className=" mt-10 flex justify-center items-center "
       style={{ overflow: "hidden", height: "calc(100vh - 20px)" }}
     >
       {!videoEnded ? (
