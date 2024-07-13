@@ -29,18 +29,18 @@ const Home = () => {
   ];
 
   return (
-    <main className="mt-24 flex justify-center items-center flex-col mx-4 md:mx-20 lg:mx-40 my-10">
-      <section className="flex flex-col md:flex-row items-center h-auto md:h-[13rem] border-b-2 border-gray-300 p-6">
-        <div className="flex-1 flex flex-col justify-center p-6">
-          <h1 className="text-2xl md:text-3xl lg:text-4xl text-[#0096d5]">
+    <main className="mt-20 flex flex-col">
+      <section className="flex flex-col md:flex-row items-center h-auto md:h-[16rem] border-b-2 border-gray-300">
+        <div className="flex-1 flex flex-col justify-center px-20">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl ">
             HP Printer Support
           </h1>
         </div>
         <div className="flex-1 p-6">
           <img
-            src="https://i.ibb.co/5rTXNrr/image-removebg-preview-35.png"
+            src="https://i1.adis.ws/i/canon/imageprograf-pro-1000-side-paper-black&white-2?w=700&sm=aspect&aspect=1:1"
             alt="HP Printer"
-            className="object-cover w-full h-auto"
+            className="object-cover w-full h-[13rem]"
           />
         </div>
       </section>
@@ -51,7 +51,7 @@ const Home = () => {
           <img
             src="https://support.hp.com/wcc-assets/content/dam/hp-wcc/headless-assets/images/topic/Printer_feature.png"
             alt="Printer Setup"
-            className="w-full h-auto rounded-lg shadow-sm"
+            className="w-full h-auto rounded-lg shadow-sm max-h-[400px]"
           />
         </div>
 
@@ -64,7 +64,7 @@ const Home = () => {
             configure, and register your printer.
           </p>
           <Link
-            to="/downloadDrivers"
+            to="/software&drivers"
             className="bg-[#0096d5] text-white py-2 px-4 rounded-lg shadow hover:bg-blue-600 transition duration-300"
           >
             Printer Setup
@@ -73,12 +73,12 @@ const Home = () => {
       </section>
 
       {/* THIRD SECTION */}
-      <section className="bg-white p-4 rounded-lg shadow-md max-w-6xl mx-4 sm:mx-auto">
+      <section className=" p-4  max-w-6xl mx-4 sm:mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {troubleshootingSteps.map(({ id, image, title, description }) => (
             <div
               key={id}
-              className="bg-gray-100 p-6 rounded-lg shadow-sm flex flex-col items-center"
+              className=" p-10 rounded-lg shadow-sm flex flex-col items-center"
             >
               <div className="mb-4">
                 <img

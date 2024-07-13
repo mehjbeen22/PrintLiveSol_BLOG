@@ -16,15 +16,14 @@ const SignIn = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center">
-      <div className="w-full max-w-screen-lg flex flex-col md:flex-row items-center justify-between p-8">
-        <div className="mb-8 md:mb-0 md:w-1/2">
-          <h1 className="text-4xl font-bold text-[#0096d5]">PrintLiveSol</h1>
-          <p className="text-xl text-gray-700 mt-4">
-            Connect with your printers and solve issues quickly.
-          </p>
-        </div>
-        <div className="p-8 bg-white mt-10 rounded-lg shadow-lg w-full max-w-md">
+    <div className="mt-10 min-h-screen bg-gray-50 flex flex-col items-center justify-center">
+      <div className="w-full max-w-screen-lg p-8 text-center">
+        <p className="text-xl text-gray-700 ">
+          Connect with your printers and solve issues quickly.
+        </p>
+      </div>
+      <div className="w-full max-w-screen-lg flex justify-center ">
+        <div className="p-8 bg-white mt-4 rounded-lg shadow-lg w-full max-w-md">
           <h2 className="text-2xl font-bold mb-6 text-[#0096d5]">Sign In</h2>
           <form>
             <div className="mb-4">

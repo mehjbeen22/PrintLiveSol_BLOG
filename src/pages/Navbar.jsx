@@ -21,6 +21,11 @@ const Navbar = () => {
               className="h-10 w-10 object-contain"
             />
           </Link>
+          <div className="hidden sm:flex sm:space-x-4 sm:ml-4">
+            <p className="text-gray-700 hover:text-gray-900">Explore</p>
+            <p className="text-gray-700 hover:text-gray-900">Shop</p>
+            <p className="text-gray-700 hover:text-gray-900">Support</p>
+          </div>
           <div className="sm:hidden">
             <button
               onClick={toggleMenu}
@@ -57,35 +62,37 @@ const Navbar = () => {
           isOpen ? "block" : "hidden"
         } bg-[#0096d5] text-white`}
       >
-        <ul className="flex flex-col sm:flex-row sm:space-x-8 py-3 px-4 sm:px-8">
-          <li>
-            <Link
-              to="/"
-              className="hover:text-gray-300 cursor-pointer block py-2 sm:py-0"
-              onClick={toggleMenu} // Close menu on link click
-            >
-              Support Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/software&drivers"
-              className="hover:text-gray-300 cursor-pointer block py-2 sm:py-0"
-              onClick={toggleMenu} // Close menu on link click
-            >
-              Software and Drivers
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/"
-              className="hover:text-gray-300 cursor-pointer block py-2 sm:py-0"
-              onClick={toggleMenu} // Close menu on link click
-            >
-              Business Support
-            </Link>
-          </li>
-          <li>
+        <ul className="flex flex-col   sm:flex-row justify-between sm:space-x-8 py-3 px-4 sm:px-8 w-full">
+          <div className="flex flex-col sm:flex-row sm:space-x-8 px-28">
+            <li>
+              <Link
+                to="/"
+                className="hover:text-gray-300 cursor-pointer block py-2 sm:py-0"
+                onClick={toggleMenu} // Close menu on link click
+              >
+                Support Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/software&drivers"
+                className="hover:text-gray-300 cursor-pointer block py-2 sm:py-0"
+                onClick={toggleMenu} // Close menu on link click
+              >
+                Software and Drivers
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/"
+                className="hover:text-gray-300 cursor-pointer block py-2 sm:py-0"
+                onClick={toggleMenu} // Close menu on link click
+              >
+                Business Support
+              </Link>
+            </li>
+          </div>
+          <li className="sm:ml-auto">
             <Link
               to="/account"
               className="hover:text-gray-300 cursor-pointer block py-2 sm:py-0"

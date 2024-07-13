@@ -51,8 +51,8 @@ const LoaderBar = () => {
 
 export default LoaderBar;
 
-
-{/* <section className="h-screen bg-[#f1f5f9] w-[90%] p-10">
+{
+  /* <section className="h-screen bg-[#f1f5f9] w-[90%] p-10">
           <p className="bg-black text-white p-5 text-3xl">Printer Connect</p>
           <div>
             <p className="text-lg mt-4">Downloading drivers......</p>
@@ -80,4 +80,5 @@ export default LoaderBar;
               </p>
             </div>
           )}
-        </section> */}
+        </section> */
+}
