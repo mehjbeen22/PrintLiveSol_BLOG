@@ -7,38 +7,26 @@ import {
   Route,
   useLocation,
 } from "react-router-dom";
-import PrinterSetup from "./pages/PrinterOffline";
-import PrinterSetupIssue from "./pages/PrinterSetupIssue";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
-import Contact from "./pages/Contact";
 import DownloadPage from "./pages/download/DownloadPage";
-import ScannerSetup from "./pages/ScannerSetup";
-import JivoChatWidget from "./pages/JivochatWidget";
+// import JivoChatWidget from "./pages/JivochatWidget";
 import SignIn from "./pages/SigninPage";
-
 import SoftwareAndDrivers from "./pages/SoftwareAndDrivers";
+import VideoPlayer from "./pages/download/VideoPlayer";
 
-// Component to conditionally render JivoChatWidget
-const RenderJivoChat = ({ children }) => {
-  // Get the current location using useLocation hook
-  const location = useLocation();
-
-  // Define an array of paths where JivoChatWidget should be rendered
-  const allowedPaths = ["/", "/printeroffline", "/printersetupissue"];
-
-  // Check if the current pathname is one of the allowed paths
-  const shouldRenderJivoChat = allowedPaths.includes(location.pathname);
-
-  // Render children along with JivoChatWidget if shouldRenderJivoChat is true
-  return shouldRenderJivoChat ? (
-    <>
-      <JivoChatWidget />
-      {children}
-    </>
-  ) : (
-    children
-  );
-};
+// const RenderJivoChat = ({ children }) => {
+//   const location = useLocation();
+//   const allowedPaths = ["/", "/printeroffline", "/printersetupissue"];
+//   const shouldRenderJivoChat = allowedPaths.includes(location.pathname);
+//   return shouldRenderJivoChat ? (
+//     <>
+//       <JivoChatWidget />
+//       {children}
+//     </>
+//   ) : (
+//     children
+//   );
+// };
 
 const App = () => {
   return (
@@ -48,15 +36,24 @@ const App = () => {
         <Route
           path="/"
           element={
-            <RenderJivoChat>
-              <Home />
-            </RenderJivoChat>
+            // <RenderJivoChat>
+            <Home />
+            // </RenderJivoChat>
           }
         />
 
+        <Route
+          path="/downloadDrivers"
+          element={
+            // <RenderJivoChat>
+            <VideoPlayer />
+            // </RenderJivoChat>
+          }
+        />
+
+        <Route path="/privacypolicy" element={<PrivacyPolicy />} />
         <Route path="/account" element={<SignIn />} />
-        <Route path="/sofware&drivers" element={<SoftwareAndDrivers />} />
-        <Route path="/downloadDrivers" element={<DownloadPage />} />
+        <Route path="/software&drivers" element={<SoftwareAndDrivers />} />
       </Routes>
       <Footer />
     </Router>
