@@ -47,12 +47,6 @@ const Navbar = () => {
             placeholder="Search HP Support"
             className="border border-gray-300 rounded outline-none w-[80%] p-1"
           />
-          <Link
-            to="/account"
-            className="bg-[#0096d5] px-3 py-1 text-white rounded text-center"
-          >
-            Sign in
-          </Link>
         </div>
       </div>
 
@@ -95,10 +89,10 @@ const Navbar = () => {
           <li className="sm:ml-auto">
             <Link
               to="/account"
-              className="hover:text-gray-300 cursor-pointer block py-2 sm:py-0"
+              className="hover:text-gray-300 cursor-pointer block py-2 sm:py-0 mr-10"
               onClick={toggleMenu} // Close menu on link click
             >
-              My HP Account
+              Sign In
             </Link>
           </li>
         </ul>

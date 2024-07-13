@@ -23,6 +23,33 @@ const ProductFinder = () => {
 
   return (
     <div className="p-4 sm:p-6 lg:p-8 mt-20">
+      <section className=" py-8">
+        <div className=" bg-white   mb-6">
+          <div className="flex  space-x-4 text-gray-700 mb-4">
+            <span className="flex items-center justify-center w-8 h-8 bg-[#0096d5] text-white rounded-full font-semibold">
+              1
+            </span>
+            <span className="font-semibold text-lg">Identify</span>
+            <span className="text-xl">{">"}</span>
+            <span className="flex items-center justify-center w-8 h-8 bg-gray-300 text-gray-700 rounded-full font-semibold">
+              2
+            </span>
+            <span className="font-semibold text-lg">Download</span>
+            <span className="text-xl">{">"}</span>
+            <span className="flex items-center justify-center w-8 h-8 bg-gray-300 text-gray-700 rounded-full font-semibold">
+              3
+            </span>
+            <span className="font-semibold text-lg">Install</span>
+          </div>
+          <div className=" text-gray-600">
+            Already have an HP account? Select from the products you own.
+            <span className="text-[#0096d5] font-semibold cursor-pointer ml-2">
+              Sign in / Create an account
+            </span>
+          </div>
+        </div>
+      </section>
+
       {/* Show VideoPlayer if showVideoPlayer is true */}
       {showVideoPlayer ? (
         <VideoPlayer />
@@ -30,7 +57,7 @@ const ProductFinder = () => {
         <>
           {/* Welcome Section */}
           <div className="flex flex-col md:flex-row justify-between items-center border-b border-black py-3">
-            <h2 className="text-xl sm:text-2xl text-green-600 mb-4 md:mb-0">
+            <h2 className="text-xl sm:text-2xl  text-green-700 mb-4 md:mb-0">
               Welcome to HP Software and Drivers
             </h2>
             <div className="flex flex-col md:flex-row justify-center items-center gap-4">

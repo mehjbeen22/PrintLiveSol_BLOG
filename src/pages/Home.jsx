@@ -38,7 +38,7 @@ const Home = () => {
         </div>
         <div className="flex-1 p-6">
           <img
-            src="https://i1.adis.ws/i/canon/imageprograf-pro-1000-side-paper-black&white-2?w=700&sm=aspect&aspect=1:1"
+            src="https://i.ibb.co/k4KVR44/image-removebg-preview-35.png"
             alt="HP Printer"
             className="object-cover w-full h-[13rem]"
           />
