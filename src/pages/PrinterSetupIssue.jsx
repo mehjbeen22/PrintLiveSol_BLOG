@@ -48,6 +48,7 @@ const PrinterSetupIssue = () => {
 };
 
 export default PrinterSetupIssue;
+
 const troubleshootingSteps = [
   {
     step: 1,
