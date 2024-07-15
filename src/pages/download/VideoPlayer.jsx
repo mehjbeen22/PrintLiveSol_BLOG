@@ -1,21 +1,22 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const VideoPlayer = () => {
-  const [videoEnded, setVideoEnded] = useState(false);
   const [showImage, setShowImage] = useState(false);
-
-  const handleVideoEnd = () => {
-    setVideoEnded(true);
-  };
+  const videoRef = useRef(null);
 
   useEffect(() => {
-    if (videoEnded) {
-      const timer = setTimeout(() => {
-        setShowImage(true);
-      }, 10000); // 10 seconds
-      return () => clearTimeout(timer);
+    const videoDuration = 10000; // 10 seconds
+
+    const timer = setTimeout(() => {
+      setShowImage(true);
+    }, videoDuration);
+
+    if (videoRef.current) {
+      videoRef.current.play();
     }
-  }, [videoEnded]);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <div
@@ -24,16 +25,15 @@ const VideoPlayer = () => {
     >
       {!showImage ? (
         <video
+          ref={videoRef}
           width="80%"
           height="auto"
           style={{
             mixBlendMode: "multiply",
             position: "relative",
           }}
-          autoPlay
           muted
-          loop={false}
-          onEnded={handleVideoEnd}
+          loop={true}
         >
           <source
             src="https://123printdesk.com/image/in-l-1.mp4"
