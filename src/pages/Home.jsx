@@ -46,29 +46,31 @@ const Home = () => {
       </section>
 
       {/* SECOND SECTION */}
-      <section className="bg-white p-8 max-w-5xl mx-auto flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-8 border-b-2 border-gray-300">
-        <div className="flex-1">
-          <img
-            src="https://support.hp.com/wcc-assets/content/dam/hp-wcc/headless-assets/images/topic/Printer_feature.png"
-            alt="Printer Setup"
-            className="w-full h-auto rounded-lg shadow-sm max-h-[400px]"
-          />
-        </div>
+      <section className="bg-white py-8  mx-auto ">
+        <div className="flex p-8 flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-8 border-b-2 border-gray-300">
+          <div className="flex-1">
+            <img
+              src="https://support.hp.com/wcc-assets/content/dam/hp-wcc/headless-assets/images/topic/Printer_feature.png"
+              alt="Printer Setup"
+              className="w-full h-[500px] rounded-lg shadow-sm "
+            />
+          </div>
 
-        <div className="flex-1">
-          <h2 className="text-xl md:text-2xl font-semibold text-[#0096d5] mb-4">
-            How to Set Up Your Printer
-          </h2>
-          <p className="text-gray-600 mb-4">
-            Click Printer Setup for step-by-step guidance on how to set up,
-            configure, and register your printer.
-          </p>
-          <Link
-            to="/software&drivers"
-            className="bg-[#0096d5] text-white py-2 px-4 rounded-lg shadow hover:bg-blue-600 transition duration-300"
-          >
-            Printer Setup
-          </Link>
+          <div className="flex-1">
+            <h2 className="text-xl md:text-2xl font-semibold text-[#0096d5] mb-4">
+              How to Set Up Your Printer
+            </h2>
+            <p className="text-gray-600 mb-4">
+              Click Printer Setup for step-by-step guidance on how to set up,
+              configure, and register your printer.
+            </p>
+            <Link
+              to="/software&drivers"
+              className="bg-[#0096d5] text-white py-2 px-4 rounded-lg shadow hover:bg-blue-600 transition duration-300"
+            >
+              Printer Setup
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -84,7 +86,7 @@ const Home = () => {
                 <img
                   src={image}
                   alt={`image${id}`}
-                  className="w-full h-32 object-contain rounded-lg shadow-md"
+                  className="w-full h-[12rem] object-contain "
                 />
               </div>
               <div className="text-center">

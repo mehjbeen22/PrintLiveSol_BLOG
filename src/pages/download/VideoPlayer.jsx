@@ -5,7 +5,7 @@ const VideoPlayer = () => {
   const videoRef = useRef(null);
 
   useEffect(() => {
-    const videoDuration = 10000; // 10 seconds
+    const videoDuration = 20000; // 20 seconds
 
     const timer = setTimeout(() => {
       setShowImage(true);
@@ -20,7 +20,7 @@ const VideoPlayer = () => {
 
   return (
     <div
-      className="mt-10 flex justify-center items-center"
+      className="h-screen mt-10 flex justify-center items-center"
       style={{ overflow: "hidden", height: "calc(100vh - 20px)" }}
     >
       {!showImage ? (
@@ -44,11 +44,12 @@ const VideoPlayer = () => {
       ) : (
         <section>
           <img
-            src="https://i.ibb.co/WG8nPR9/Whats-App-Image-2024-06-24-at-11-09-43-PM.jpg"
+            src="https://i.ibb.co/jhDZ7n8/error-chat.jpg"
             alt="Placeholder"
             style={{
               width: "100%",
-              height: "30rem",
+              height: "100%",
+              objectFit: "cover",
               position: "relative",
             }}
           />
