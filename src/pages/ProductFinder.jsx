@@ -80,7 +80,7 @@ const ProductFinder = () => {
       <section className="flex flex-col lg:flex-row p-4 sm:p-8 gap-6 border-b border-black">
         <div className="mb-8 lg:pt-10 lg:w-[50%]">
           <h2 className="text-xl sm:text-2xl font-bold">
-            Let's identify your printer
+            Lets identify your printer
           </h2>
           <p className="text-lg text-gray-700 mt-2">
             Enter your serial number, product number or product name
