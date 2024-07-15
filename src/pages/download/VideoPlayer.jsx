@@ -1,18 +1,28 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const VideoPlayer = () => {
   const [videoEnded, setVideoEnded] = useState(false);
+  const [showImage, setShowImage] = useState(false);
 
   const handleVideoEnd = () => {
     setVideoEnded(true);
   };
 
+  useEffect(() => {
+    if (videoEnded) {
+      const timer = setTimeout(() => {
+        setShowImage(true);
+      }, 10000); // 10 seconds
+      return () => clearTimeout(timer);
+    }
+  }, [videoEnded]);
+
   return (
     <div
-      className=" mt-10 flex justify-center items-center "
+      className="mt-10 flex justify-center items-center"
       style={{ overflow: "hidden", height: "calc(100vh - 20px)" }}
     >
-      {!videoEnded ? (
+      {!showImage ? (
         <video
           width="80%"
           height="auto"
