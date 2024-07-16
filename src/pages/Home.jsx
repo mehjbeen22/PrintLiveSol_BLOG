@@ -46,8 +46,8 @@ const Home = () => {
       </section>
 
       {/* SECOND SECTION */}
-      <section className="bg-white py-8  mx-auto ">
-        <div className="flex p-8 flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-8 border-b-2 border-gray-300">
+      <section className="bg-white border-b-2 border-gray-300 ">
+        <div className="flex px-10 py-6 flex flex-col md:flex-row  space-y-8 md:space-y-0 md:space-x-8 ">
           <div className="flex-1">
             <img
               src="https://support.hp.com/wcc-assets/content/dam/hp-wcc/headless-assets/images/topic/Printer_feature.png"
@@ -57,13 +57,16 @@ const Home = () => {
           </div>
 
           <div className="flex-1">
-            <h2 className="text-xl md:text-2xl font-semibold text-[#0096d5] mb-4">
+            <h2 className="text-2xl md:text-2xl font-semibold text-[#0096d5] mt-10 ">
               How to Set Up Your Printer
             </h2>
-            <p className="text-gray-600 mb-4">
-              Click Printer Setup for step-by-step guidance on how to set up,
-              configure, and register your printer.
+            <br /> <br />
+            <p className="text-gray-600 mb-4 font-semibold text-lg">
+              Click Printer Setup for step-by-step guidance on
+              <br />
+              how to set up,configure, and register your printer.
             </p>
+            <br />
             <Link
               to="/software&drivers"
               className="bg-[#0096d5] text-white py-2 px-4 rounded-lg shadow hover:bg-blue-600 transition duration-300"
@@ -80,7 +83,7 @@ const Home = () => {
           {troubleshootingSteps.map(({ id, image, title, description }) => (
             <div
               key={id}
-              className=" p-10 rounded-lg shadow-sm flex flex-col items-center"
+              className=" px-10 py-20 rounded-lg shadow-sm flex flex-col items-center border"
             >
               <div className="mb-4">
                 <img

@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white fixed w-full top-0 z-10 shadow-md">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between py-3">
+      <div className="container mx-auto   flex flex-col sm:flex-row items-center justify-between py-3">
         {/* Logo or Brand */}
         <div className="flex justify-between items-center w-full sm:w-auto">
           <Link to="/">
@@ -74,6 +74,24 @@ const Navbar = () => {
                 onClick={toggleMenu} // Close menu on link click
               >
                 Software and Drivers
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/software&drivers"
+                className="hover:text-gray-300 cursor-pointer block py-2 sm:py-0"
+                onClick={toggleMenu} // Close menu on link click
+              >
+                Printer Diagnostic Tools
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/software&drivers"
+                className="hover:text-gray-300 cursor-pointer block py-2 sm:py-0"
+                onClick={toggleMenu} // Close menu on link click
+              >
+                Scanner Diagnostic Tools
               </Link>
             </li>
             <li>
