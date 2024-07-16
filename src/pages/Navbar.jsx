@@ -11,17 +11,17 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white fixed w-full top-0 z-10 shadow-md">
-      <div className="container mx-auto   flex flex-col sm:flex-row items-center justify-between py-3">
+      <div className="   flex flex-col sm:flex-row items-center justify-between py-3">
         {/* Logo or Brand */}
         <div className="flex justify-between items-center w-full sm:w-auto">
           <Link to="/">
             <img
               src="https://i.ibb.co/Lr0FhXL/hp-logo-removebg-preview.png"
               alt="Logo"
-              className="h-10 w-10 object-contain"
+              className="h-10 w-10 object-contain m-3"
             />
           </Link>
-          <div className="hidden sm:flex sm:space-x-4 sm:ml-4">
+          <div className="hidden sm:flex sm:space-x-4 sm:ml-4 text-xl">
             <p className="text-gray-700 hover:text-gray-900">Explore</p>
             <p className="text-gray-700 hover:text-gray-900">Shop</p>
             <p className="text-gray-700 hover:text-gray-900">Support</p>
