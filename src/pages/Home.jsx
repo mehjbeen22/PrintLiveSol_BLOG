@@ -69,7 +69,7 @@ const Home = () => {
             <br />
             <Link
               to="/software&drivers"
-              className="bg-[#0096d5] text-white py-2 px-4 rounded-lg shadow hover:bg-blue-600 transition duration-300"
+              className="bg-[#0096d5] text-white py-2   rounded-lg shadow hover:bg-blue-600 transition duration-300"
             >
               Printer Setup
             </Link>
@@ -83,7 +83,7 @@ const Home = () => {
           {troubleshootingSteps.map(({ id, image, title, description }) => (
             <div
               key={id}
-              className=" px-10 py-20 rounded-lg shadow-sm flex flex-col items-center border"
+              className=" px-10 py-20 rounded-lg shadow-sm flex flex-col items-center "
             >
               <div className="mb-4">
                 <img
@@ -127,7 +127,7 @@ export default Home;
 //               "url('https://img.freepik.com/premium-photo/multi-function-printer-machine_127657-16535.jpg?w=900')",
 //           }}
 //         ></div>
-//         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  text-white">
+//         <div className="relative max-w-7xl mx-auto   sm:px-6 lg:px-8  text-white">
 //           <h1 className="  text-4xl font-bold mb-4 animate__animated animate__fadeInDown">
 //             How to set up your Printer
 //           </h1>

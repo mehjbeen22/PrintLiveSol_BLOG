@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Carousel } from "react-responsive-carousel";
 import { useNavigate } from "react-router-dom"; // Updated import
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // import carousel styles

@@ -44,7 +44,7 @@ const Contact = () => {
   return (
     <>
       <section className="bg-white text-black py-12 mt-20">
-        <div className="max-w-4xl mx-auto px-4 border shadow-2xl p-4 bg-gray-100">
+        <div className="max-w-4xl mx-auto   border shadow-2xl p-4 bg-gray-100">
           <h2 className="text-3xl font-bold mb-4 text-center">Contact Us</h2>
           <p className="mb-6 text-center">
             If you have any questions or inquiries, feel free to reach out to us
@@ -90,7 +90,7 @@ const Contact = () => {
             <div>
               <button
                 type="submit"
-                className="w-full bg-black text-white py-2 px-4 hover:bg-gray-900 transition duration-300"
+                className="w-full bg-black text-white py-2   hover:bg-gray-900 transition duration-300"
               >
                 Submit
               </button>
@@ -107,7 +107,7 @@ const Contact = () => {
             </p>
             <button
               onClick={() => setFormError(false)}
-              className="bg-black text-white py-2 px-4 hover:bg-gray-900 transition duration-300 rounded-md"
+              className="bg-black text-white py-2   hover:bg-gray-900 transition duration-300 rounded-md"
             >
               Close
             </button>
@@ -120,7 +120,7 @@ const Contact = () => {
             <p className="mb-4">Your message has been sent!</p>
             <button
               onClick={closePopup}
-              className="bg-black text-white py-2 px-4 hover:bg-gray-900 transition duration-300 rounded-md"
+              className="bg-black text-white py-2   hover:bg-gray-900 transition duration-300 rounded-md"
             >
               Close
             </button>

@@ -105,7 +105,7 @@ import { Link } from "react-router-dom";
 const PrinterOffline = () => {
   return (
     <main className=" min-h-screen py-8">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-24">
+      <div className="container mx-auto   sm:px-6 lg:px-8 mt-24">
         <section className="p-2 rounded-lg  mb-10 flex flex-col justify-center items-center">
           <h2 className="text-3xl font-bold mb-4 text-black ">
             Printer Offline
@@ -156,7 +156,7 @@ const PrinterOffline = () => {
             </ul>
             <Link
               to="/downloadDrivers"
-              className="bg-[#0278AB] text-white px-4 py-2 rounded hover:black transition duration-300"
+              className="bg-[#0278AB] text-white   py-2 rounded hover:black transition duration-300"
             >
               Get HP Smart
             </Link>

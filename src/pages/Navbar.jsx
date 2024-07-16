@@ -56,7 +56,7 @@ const Navbar = () => {
           isOpen ? "block" : "hidden"
         } bg-[#0096d5] text-white`}
       >
-        <ul className="flex flex-col   sm:flex-row justify-between sm:space-x-8 py-3 px-4 sm:px-8 w-full">
+        <ul className="flex flex-col   sm:flex-row justify-between sm:space-x-8 py-3   sm:px-8 w-full">
           <div className="flex flex-col sm:flex-row sm:space-x-8 px-28">
             <li>
               <Link
