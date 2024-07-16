@@ -3,13 +3,12 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="bg-black text-white py-8">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <h3 className="font-semibold text-lg mb-4">About Us</h3>
           <ul>
             <li>About Us</li>
-            <li>Contact HP</li>
-            <li>Careers</li>
+
             <li>Investor relations</li>
             <li>Sustainable impact</li>
             <li>Press center</li>
@@ -20,10 +19,10 @@ const Footer = () => {
           <h3 className="font-semibold text-lg mb-4">Ways to Buy</h3>
           <ul>
             <li>Shop online</li>
-            <li>HP World: Brand exclusive stores</li>
-            <li>Call an HP rep</li>
+
             <li>Find a reseller</li>
-            <li>HP Promotions</li>
+            <li>Authorized service providers</li>
+            <li>Check repair status</li>
           </ul>
         </div>
         <div>
@@ -34,22 +33,11 @@ const Footer = () => {
             <li>Support & troubleshooting</li>
             <li>Community</li>
             <li>Register your product</li>
-            <li>Authorized service providers</li>
-            <li>Check repair status</li>
-          </ul>
-        </div>
-        <div>
-          <h3 className="font-semibold text-lg mb-4">Featured Links</h3>
-          <ul>
-            <li>HP Partners</li>
-            <li>HP Amplify Partner Program</li>
-            <li>HP Partner Portal</li>
-            <li>Developers</li>
           </ul>
         </div>
       </div>
       <div className="text-center mt-8">
-        &copy; {new Date().getFullYear()} HP Inc. All rights reserved.
+        &copy; {new Date().getFullYear()} PrinterLiveSol. All rights reserved.
       </div>
     </footer>
   );

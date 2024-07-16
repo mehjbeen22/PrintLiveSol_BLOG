@@ -69,7 +69,7 @@ const Home = () => {
             <br />
             <Link
               to="/software&drivers"
-              className="bg-[#0096d5] text-white py-2   rounded-lg shadow hover:bg-blue-600 transition duration-300"
+              className="bg-[#0096d5] text-white py-2 px-4 rounded-lg shadow hover:bg-blue-600 transition duration-300"
             >
               Printer Setup
             </Link>
