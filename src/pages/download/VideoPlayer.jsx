@@ -42,7 +42,7 @@ const VideoPlayer = () => {
           Your browser does not support the video tag.
         </video>
       ) : (
-        <section>
+        <section className="h-screen mt-40 mb-20 p-20">
           <img
             src="https://i.ibb.co/jhDZ7n8/error-chat.jpg"
             alt="Placeholder"
